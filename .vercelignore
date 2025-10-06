@@ -1,0 +1,13 @@
+# Exclude unnecessary files from Vercel deployment
+node_modules/
+.env
+.git/
+.gitignore
+README.md
+vercel.json
+.vercelignore
+deploy.sh
+composer.lock
+package-lock.json
+phpunit.xml
+tests/
