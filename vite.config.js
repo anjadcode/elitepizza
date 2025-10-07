@@ -8,4 +8,5 @@ export default defineConfig({
             refresh: null,
         }),
     ],
+    base: process.env.VITE_ASSETS_URL || process.env.APP_URL,
 });
