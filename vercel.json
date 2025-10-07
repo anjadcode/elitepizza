@@ -14,13 +14,6 @@
       "dest": "/api/index.php"
     }
   ],
-  "redirects": [
-    {
-      "source": "/build/(.*)",
-      "destination": "https://elitepizza.vercel.app/build/:splat",
-      "permanent": true
-    }
-  ],
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
