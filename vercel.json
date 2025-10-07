@@ -4,7 +4,56 @@
   "functions": {
     "api/index.php": { "runtime": "vercel-php@0.7.4" }
   },
-
+  "rewrites": [
+    {
+      "source": "/build/(.*)",
+      "destination": "/public/build/$1"
+    },
+    {
+      "source": "/(.*\\.css)",
+      "destination": "/public/$1"
+    },
+    {
+      "source": "/(.*\\.js)",
+      "destination": "/public/$1"
+    },
+    {
+      "source": "/(.*\\.ico)",
+      "destination": "/public/$1"
+    },
+    {
+      "source": "/(.*\\.svg)",
+      "destination": "/public/$1"
+    },
+    {
+      "source": "/(.*\\.png)",
+      "destination": "/public/$1"
+    },
+    {
+      "source": "/(.*\\.jpg)",
+      "destination": "/public/$1"
+    },
+    {
+      "source": "/(.*\\.jpeg)",
+      "destination": "/public/$1"
+    },
+    {
+      "source": "/(.*\\.gif)",
+      "destination": "/public/$1"
+    },
+    {
+      "source": "/(.*\\.woff)",
+      "destination": "/public/$1"
+    },
+    {
+      "source": "/(.*\\.woff2)",
+      "destination": "/public/$1"
+    },
+    {
+      "source": "/(.*\\.ttf)",
+      "destination": "/public/$1"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
