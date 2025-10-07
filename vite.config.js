@@ -6,6 +6,19 @@ export default defineConfig({
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: null,
+            buildDirectory: 'build',
         }),
     ],
+    build: {
+        manifest: true,
+    },
+    server: {
+        origin: 'https://elitepizza.vercel.app',
+        hmr: {
+            protocol: 'https'
+        }
+    },
+    preview: {
+        origin: 'https://elitepizza.vercel.app'
+    }
 });
