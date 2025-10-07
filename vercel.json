@@ -38,10 +38,7 @@
     {
       "source": "/build/(.*)",
       "destination": "https://elitepizza.vercel.app/build/:splat",
-      "permanent": true,
-      "headers": {
-        "X-From-Redirect": "true"
-      }
+      "permanent": true
     }
   ],
   "env": {
